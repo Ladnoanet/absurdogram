@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Billabong';
+            src: url('billabong_regular.otf') format('opentype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            padding: 0;
+            margin: 0;
+            position: fixed;
+            background-color: white;
+            width: 100%;
+            height: 43px;
+        }
+
+        header p {
+            font-family: 'Billabong', sans-serif;
+            margin-top: 5px;
+            margin-left: 10px;
+            font-size: 30px;
+            color: black;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .content {
+            position: absolute;
+            top: 44px;
+            z-index: -1;
+        }
+
+        a {
+            margin-top: 15px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: bold;
+            font-size: 17px;
+        }
+
+        a:hover {
+            color: rgb(95, 95, 95);
+        }
+
+        p {
+            color: rgb(95, 95, 95);
+            margin-left: 10px;
+            margin-top: 1px;
+        }
+
+        .post main {
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            border-radius: 50%;
+        }
+
+                /* Стиль для постов можно оставить без изменений */
+        #load-more-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #load-more-btn:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>absurdgram</p>
+    </header>
+
+    <div class="content">
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;" id="post-container">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/1000/1000" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>48 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/900/900" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>12 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/800/800" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>41 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/700/700" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>143 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/600/600" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>5 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/500/500" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>6 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/501/501" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>9 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/502/502" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>99 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/503/503" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>1,5 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/504/504" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>1000 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/505/505" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>0 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/506/506" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>пару лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/507/507" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>хз когда</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/508/508" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>2 года назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;" id="post-container">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/509/509" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>48 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/510/510" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>12 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/511/511" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>41 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/512/512" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>143 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/513/513" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>5 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/514/514" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>6 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/515/515" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>9 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/516/516" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>99 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/517/517" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>1,5 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/518/518" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>1000 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/519/519" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>0 лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/520/520" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>пару лет назад</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/521/521" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>хз когда</p>
+        </div>
+
+        <div class="post">
+            <hr>
+            <main style="margin-top: -10px;">
+                <div class="avatar"></div>
+                <p style="color: black; margin-left: 10px; margin-top: 15px;">image autor</p>
+            </main>
+            <img src="https://picsum.photos/522/522" alt="">
+            <main style="display: flex;">
+                <strong><a href="">Дерьмо!</a><a href="">Похейтить</a></strong>
+            </main>
+            <p>2 года назад</p>
+        </div>
+    </div>
+
+    <script>
+        // Генерация случайного цвета для аватара
+function getRandomColor() {
+    return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+
+// Установка случайного цвета для всех элементов с классом avatar
+document.querySelectorAll('.avatar').forEach(avatar => {
+    avatar.style.backgroundColor = getRandomColor();
+});
+
+
+    </script>
+</body>
+</html>
